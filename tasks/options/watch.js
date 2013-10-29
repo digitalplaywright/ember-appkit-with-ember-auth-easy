@@ -23,10 +23,10 @@ module.exports = {
     files: [indexHTML],
     tasks: ['lock', 'buildIndexHTML:debug', 'unlock']
   },
-  other: {
-    files: [other, '!'+scripts, '!'+templates, '!'+styles, '!'+indexHTML],
-    tasks: ['lock', 'build:debug', 'unlock']
-  },
+  // other: {
+  //   files: [other, '!'+scripts, '!'+templates, '!'+styles, '!'+indexHTML],
+  //   tasks: ['lock', 'build:debug', 'unlock']
+  // },
 
   options: {
     debounceDelay: 200,

@@ -1,5 +1,6 @@
 import Resolver from 'resolver';
 import registerComponents from 'appkit/utils/register_components';
+import registerAuth from "appkit/utils/register_auth";
 
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,
@@ -15,6 +16,13 @@ App.initializer({
   name: 'Register Components',
   initialize: function(container, application) {
     registerComponents(container);
+  }
+});
+
+App.initializer({
+  name: 'Register Ember Auth Easy',
+  initialize: function(container, application) {
+    registerAuth();
   }
 });
 
