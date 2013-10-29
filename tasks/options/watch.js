@@ -23,10 +23,14 @@ module.exports = {
     files: [indexHTML],
     tasks: ['lock', 'buildIndexHTML:debug', 'unlock']
   },
-  other: {
-    files: [other, '!'+scripts, '!'+templates, '!'+styles, '!'+indexHTML],
-    tasks: ['lock', 'build:debug', 'unlock']
-  },
+
+  // This gives us too many files being watched.  Unsure why when there seems to
+  // only be like 70 files.
+  //
+  // other: {
+  //   files: [other, '!'+scripts, '!'+templates, '!'+styles, '!'+indexHTML],
+  //   tasks: ['lock', 'build:debug', 'unlock']
+  // },
 
   options: {
     debounceDelay: 200,

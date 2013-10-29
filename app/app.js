@@ -1,5 +1,6 @@
 import Resolver from 'resolver';
 import registerComponents from 'appkit/utils/register_components';
+import Auth from "appkit/auth";
 
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,
@@ -18,5 +19,13 @@ App.initializer({
   }
 });
 
+
+// TODO: Why is this necessary?  This is very surprising.
+App.initializer({
+  name: 'Register Ember Auth Components',
+  initialize: function(container, application) {
+    registerAuth(container);
+  }
+});
 
 export default App;
