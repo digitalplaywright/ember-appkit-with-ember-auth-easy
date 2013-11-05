@@ -2,7 +2,7 @@ var EmberAuth = window.EmberAuth;
 
 function registerAuth() {
   EmberAuth.registerOps({
-    baseUrl: 'http://localhost:5000/api'
+    baseUrl: 'http://localhost:3000/'
   });
 }
 
