@@ -7,7 +7,7 @@
     "ember": "1.2.0-beta.1",
     "ember-data-shim": "1.0.0-beta.3",
     "ember-auth": "~8.0",
-    "ember-auth-easy": "git://github.com/digitalplaywright/ember-auth-easy.git"
+    "ember-auth-easy": "git://github.com/mharris717/ember-auth-easy.git"
   },
   "resolutions": {
     "ember": "1.2.0-beta.1"
